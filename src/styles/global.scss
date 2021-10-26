@@ -1,0 +1,21 @@
+:root{
+  --roxo: #835AFD;
+  --branco-bg: #f8f8f8;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  background: var(--branco-bg);
+  color: #29292e;
+}
+
+body, input, button, textarea{
+  font: 400 16px 'Roboto', sans-serif;
+}
