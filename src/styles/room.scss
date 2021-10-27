@@ -1,0 +1,77 @@
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+#page-room {
+  header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e2e2e2;
+
+    .content {
+      max-width: rem(1120px);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > img {
+        max-height: rem(45px);
+      }
+    }
+  }
+}
+
+main {
+  max-width: rem(800px);
+  margin: 0 auto;
+  .room-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font: 700 1.5rem "Poppins", sans-serif;
+      color: #29292e;
+    }
+    span {
+      padding: 0.5rem 1rem;
+      color: white;
+      background: #e559f9;
+      border-radius: 1rem;
+      font: 500 14px "Roboto", sans-serif;
+    }
+  }
+  form {
+    textarea {
+      width: 100%;
+      margin-bottom: rem(33px);
+      border: 0;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      background: #fefefe;
+      resize: none;
+      min-height: rem(133px);
+      box-shadow: 0 rem(2px) rem(12px) rgba(0, 0, 0, 0.04);
+    }
+    .form-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        color: #737380;
+        font-size: rem(14px);
+        font-weight: 500;
+        button {
+          background: transparent;
+          border: 0;
+          color: #835afd;
+          font-size: rem(14px);
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
