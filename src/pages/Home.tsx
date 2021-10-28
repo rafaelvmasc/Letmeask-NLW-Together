@@ -35,6 +35,11 @@ export function Home() {
       alert("Room does not exists");
       return;
     }
+    if (roomRef.val().closedAt) {
+      alert("This room has expired");
+      return;
+    }
+
     history.push(`/rooms/${salaCode}`);
   }
 

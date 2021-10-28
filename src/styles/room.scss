@@ -56,7 +56,7 @@ main {
       box-shadow: 0 rem(2px) rem(12px) rgba(0, 0, 0, 0.04);
 
       &:focus {
-        outline: none !important;
+        outline: none;
         border: 1px solid #835afd;
       }
     }
@@ -93,33 +93,5 @@ main {
       }
     }
   }
-  .question-content {
-    margin-bottom: 0.5rem;
-    max-width: rem(800px);
-    padding: rem(24px);
-    border-radius: 0.5rem;
-    background: #fefefe;
-    box-shadow: 0 rem(2px) rem(12px) rgba(0, 0, 0, 0.06);
-
-    .question-text {
-      color: #29292e;
-      font: 400 1rem "Roboto", sans-serif;
-    }
-
-    .user-info {
-      margin-top: 1.5rem;
-      display: flex;
-      align-items: center;
-      color: #737380;
-      font-size: rem(14px);
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      gap: 0.5rem;
-      img {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-      }
-    }
-  }
+  
 }
